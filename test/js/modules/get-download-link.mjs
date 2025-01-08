@@ -1,3 +1,4 @@
+import fetchData from "../services/fetch-data.mjs";
 
 export default function getDownloadLink(link){
     // https://www.facebook.com/share/v/15qyFaycY2/
@@ -10,5 +11,7 @@ export default function getDownloadLink(link){
             if(link.startsWith("https://www.facebook.com") === false){
                   return resolve({Message: "WrongLink"});
             }
+
+            fetchData();
       });
 }
