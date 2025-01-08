@@ -1,0 +1,39 @@
+
+dialog{
+    padding:15px;
+    padding-bottom:50px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    color:#000000;
+    position:relative;
+
+    & span{
+      font-size:0.9em;
+      font-weight:bold;
+    }
+
+    & p{
+      
+        font-size:1em;
+    }
+
+    & button{
+
+        padding:10px 15px 10px 15px;
+        border-radius:5px;
+        outline:none;
+        border:none;
+        display:block;
+        color:#ffffff;
+        font-size:0.8em;
+        position:absolute;
+        bottom:15px;
+        right:15px;
+        background: var(--button-color);
+    }
+}
+   
+::backdrop{
+    background: rgba(0,0,0,0.5);
+}

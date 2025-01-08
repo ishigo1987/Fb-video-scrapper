@@ -1,0 +1,24 @@
+{
+  "name": "fb-video-scrapper",
+  "version": "1.0.0",
+  "description": "Facebook video url scrapper",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
+  },
+  "keywords": [
+    "scrapper",
+    "facebook",
+    "nodejs",
+    "video"
+  ],
+  "author": "Nguetseng Stephane",
+  "license": "ISC",
+  "dependencies": {
+    "fb-downloader-scrapper": "^2.0.0"
+  }
+}
