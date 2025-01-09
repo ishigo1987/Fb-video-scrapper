@@ -22,16 +22,13 @@ export default function fetchData(requestData, options){
             }
         };
 
-        return fetch(url, options).then((response)=>{
-
+        return fetch(url, options).then((response)=>{ 
             return response.json();
 
         }).then((result)=>{
-
             return resolve(result);
 
-        }).catch((error)=>{
-             
+        }).catch((error)=>{  
             return resolve(error);
 
         });

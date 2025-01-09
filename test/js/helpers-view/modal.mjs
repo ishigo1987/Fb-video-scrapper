@@ -1,6 +1,6 @@
 import render from "../helpers/render.mjs"
 
-export default function modal(title, message, buttonText){  
+export default function modal(title, message, buttonText = "Fermer"){  
 
       return new Promise(async (resolve)=>{
            
@@ -13,7 +13,8 @@ export default function modal(title, message, buttonText){
             `;
             await render(document.querySelector("body"), modal, "inAdjHtml");
             document.querySelector("#close-modale").addEventListener("click", function(){
-                return this.parentElement.close();
+                this.parentElement.close();
+                return this.parentElement.remove();
             });
             return resolve(document.querySelector("dialog")); 
       })

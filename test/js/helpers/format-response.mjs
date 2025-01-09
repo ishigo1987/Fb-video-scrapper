@@ -7,4 +7,7 @@ export default function formatResponse(message){
       if(message === "WrongLink"){
           return "Veuillez entrer un lien de téléchargement pour facebook uniquement.";
       }
+      if(message === "ScrappingError"){
+          return "Erreur lors de la recherche d'informations sur la vidéo.";
+      }
 }

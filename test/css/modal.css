@@ -3,6 +3,7 @@ dialog{
     padding:15px;
     padding-bottom:50px;
     border-radius:5px;
+    max-width:50%;
     outline:none;
     border:none;
     color:#000000;
@@ -16,6 +17,7 @@ dialog{
     & p{
       
         font-size:1em;
+        overflow-wrap: break-word;
     }
 
     & button{
@@ -30,6 +32,7 @@ dialog{
         position:absolute;
         bottom:15px;
         right:15px;
+        cursor:pointer;
         background: var(--button-color);
     }
 }
